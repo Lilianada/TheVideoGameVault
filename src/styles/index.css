@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Tajawal:wght@400;500;700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root{
+    /* Colors */
+    --primary: #1f2122;
+    --secondary: #27292a ;
+    --tertiary: #e75e8d;
+    --white: #fff;
+    --black: #000;
+    --alt: #666;
+
+    /* Font */
+    --font-primary: 'Poppins', sans-serif;
+
+    /* Font Size */
+    --fourtyFive: 35px;
+    --thirtyFour: 28px;
+    --twentyFour: 20px;
+    --twenty: 18px;
+    --eighteen: 16px;
+    --sixteen: 16px;
+    --fourteen: 14px;
+    --twelve: 12px;
+    --ten: 10px;
+    --eight: 8px;
+
+    
+}
+
+@media screen and (min-weight: 768px) {
+    
+    :root{
+        /* Font Size */
+        --fourtyFive: 45px;
+        --thirtyFour: 34px;
+        --twentyFour: 24px;
+        --twenty: 20px;
+        --eighteen: 18px;
+        --sixteen: 16px;
+        --fourteen: 14px;
+        --twelve: 12px;
+        --ten: 10px;
+        --eight: 8px;
+    }
+    
+}
+
+/* Utilities */
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body{
+    background-color: var(--primary);
+    color: var(--white);
+    max-width: 2560px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul li{
+    list-style: none;
+}
+
+/* Button */
+
+
+/* Header */
+.header{
+    padding: 1rem 0;
+}
+
+.header__container{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
