@@ -324,7 +324,37 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+    /* Desktop Header */
   .mobile-header {
     display: none;
   }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: transparent;
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+.footerText {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.brand-text {
+    font-family: var(--font-secondary);
+}
+
+.footerText a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footerText a:hover {
+    color: var(--white);
+    text-decoration: underline;
 }
