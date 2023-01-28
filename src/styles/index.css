@@ -267,10 +267,6 @@ header {
   background-clip: border-box;
 }
 
-.active-navbar {
-  left: 0;
-}
-
 .navbar {
   display: flex;
   flex-direction: column;
@@ -280,8 +276,13 @@ header {
   width: 100vw;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -150%;
+  transition: all .5s ease-in;
   padding: 2rem;
+}
+
+.active {
+  left: 0;
 }
 
 .nav-list {

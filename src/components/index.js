@@ -1,7 +1,22 @@
-const toggle = document.querySelector(".nav-toggle");
-const navbar = document.querySelector(".navbar");
+// function toggleMenu() {
+//     const toggle = document.querySelector('.nav-toggle');
+//     const nav = document.querySelector('.navbar');
+//     toggle.classList.toggle('change');
+//     nav.classList.toggle('active');
+// }
 
-toggle.addEventListener("click", () => {
-    toggle.classList.toggle("change");
-    navbar.classList.toggle("active-navbar");
-});
+
+function toggleMenu(){
+    showMenu('nav-toggle','navbar')
+    document.querySelector("nav-toggle").classList.toggle("change") 
+}
+
+const showMenu =(toggleId, navId) =>{
+    const toggle = document.querySelector(toggleId),
+    nav = document.querySelector(navId)
+    
+    if(toggle && nav){
+        nav.classList.toggle('active')
+        }
+    }
+showMenu('nav-toggle','navbar')
