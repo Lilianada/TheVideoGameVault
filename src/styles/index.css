@@ -2,9 +2,6 @@
 
 :root {
   /* Colors */
-  --primary: #1f2122;
-  --secondary: #27292a;
-  --brand: #003253;
   --gradient: linear-gradient(270deg, #1ac6e1 50%, #0886be 100%);
   --white: #fff;
   --black: #000;
@@ -15,8 +12,7 @@
   --font-secondary: "Risque", cursive;
 
   /* Font Size */
-  --fourtyFive: 35px;
-  --fourtyFive: 35px;
+  --fourtyFive: 34px;
   --thirtyFour: 28px;
   --twentyFour: 20px;
   --twenty: 18px;
@@ -93,13 +89,13 @@ h1 {
   font-size: var(--fourtyFive);
   font-style: normal;
   font-weight: 700;
-  line-height: 66px;
+  line-height: 50px;
   color: var(--white);
 }
 
 h2 {
   font-size: var(--thirtyFour);
-  line-height: 64px;
+  line-height: 34px;
   font-weight: 700;
 }
 
