@@ -6,7 +6,6 @@
   --secondary: #27292a;
   --brand: #003253;
   --gradient: linear-gradient(270deg, #1ac6e1 50%, #0886be 100%);
-  --tertiary: #e75e8d;
   --white: #fff;
   --black: #000;
   --alt: #666;
@@ -189,8 +188,11 @@ button:hover {
   overflow-x: hidden;
 }
 
-.primaryText {
-  color: var(--tertiary);
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Header */
