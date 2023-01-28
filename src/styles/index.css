@@ -2,6 +2,7 @@
 
 :root {
   /* Colors */
+  --brand: #003253;
   --gradient: linear-gradient(270deg, #1ac6e1 50%, #0886be 100%);
   --white: #fff;
   --black: #000;
