@@ -10,7 +10,7 @@
 }
 
 .hero-section{
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 .hero-texts{
@@ -18,16 +18,16 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 1rem;
-    background: url(../../src/assets/image.jfif);
-    background-size: cover;
-    background-position: center;
+    padding: 3rem 1rem;
+    background: url(../../src/assets/cod2.jpg);
+    background-size:  cover;
+    background-position: center top;
     background-repeat: no-repeat;
     border-radius: 1rem;
 }
 
-.hero-text{
-    line-height: 40px;
+.hero-title{
+    line-height: 42px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -36,6 +36,23 @@
 @media screen and (min-width: 768px) {
     .container{
         margin: 3rem auto;
+    }
+
+    .hero-section{
+        padding: 3rem 2rem;
+    }
+
+    .hero-texts{
+        padding: 3rem 2rem;
+    }
+
+    .welcome-text{
+        font-size: var(--twenty);
+    }
+
+    .hero-title{
+        font-size: var(--fourtyFive);
+        line-height: 52px;
     }
 }
     
