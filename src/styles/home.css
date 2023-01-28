@@ -3,12 +3,21 @@
 .container{
     width: 90%;
     background: rgba(0 50 83 / 32%);
-    height: 90%;
+    /* height: 90%; */
     min-height: 90vh;
     margin: 2rem auto;
     border-radius: 1rem
 }
 
+.section-title{
+    line-height: 42px;
+    font-size: var(--fourtyFive);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Hero section */
 .hero-section{
     padding: 3rem 1rem;
 }
@@ -19,18 +28,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 3rem 1rem;
-    background: url(../../src/assets/cod2.jpg);
+    background: url(../../src/assets/cod2.jpg) var(--brand) ;
     background-size:  cover;
     background-position: center top;
     background-repeat: no-repeat;
     border-radius: 1rem;
-}
-
-.hero-title{
-    line-height: 42px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,6 +55,57 @@
     .hero-title{
         font-size: var(--fourtyFive);
         line-height: 52px;
+    }
+}
+    
+
+/* Livestream section */
+.livestream-section{
+    background: rgba(6 44 75 / 50%);
+    padding: 3rem 1rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-item{
+    width: 90%;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 0 auto 1rem;
+    background-color: var(--brand);
+}
+
+.flex-img{
+    height: 200px;
+}
+
+.flex-img iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-title{
+    font-size: var(--fourteen);
+    text-align: left;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .livestream-section{
+        padding: 3rem 2rem;
+    }
+
+    .flex-item{
+        width: 23%;
     }
 }
     

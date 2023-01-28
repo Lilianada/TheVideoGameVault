@@ -34,7 +34,10 @@ class myHeader extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/" class="btn-secondary">
+                <a href="https://www.youtube.com/@TheVideoGameVault/videos" 
+                target="_blank"
+                rel="noopener noreferrer"
+                 class="btn-secondary">
                   <i class="fa fa-youtube" aria-hidden="true"></i>
                   Youtube
                 </a>
@@ -90,7 +93,9 @@ class myHeader extends HTMLElement {
               </li>
             </ul>
             <!-- Youtube Button -->
-            <a href="/" class="nav-list youtube-button btn-secondary">
+            <a href="https://www.youtube.com/@TheVideoGameVault/videos" class="nav-list youtube-button btn-secondary" 
+            target="_blank"
+            rel="noopener noreferrer">
               <i class="fa fa-youtube" aria-hidden="true"></i>
               <p class="button-text">Youtube</p>
             </a>
@@ -111,9 +116,9 @@ toggle.addEventListener("click", () => {
   nav.classList.toggle("nav-open");
 });
 
-if ( toggle.classList.contains("change")) {
-    nav.classList.add("nav-open");
-    console.log("open");
+if (toggle.classList.contains("change")) {
+  nav.classList.add("nav-open");
+  console.log("open");
 }
 
 link.forEach((link) => {
@@ -123,4 +128,3 @@ link.forEach((link) => {
     link.classList.add("active-link");
   });
 });
-

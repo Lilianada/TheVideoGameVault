@@ -1,56 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="./public/logo192.png" />
     <link rel="manifest" href="./public/manifest.json" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="stylesheet" href="./src/styles/home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- favicon -->
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> -->
     <title>The Video Game Vault</title>
   </head>
 
   <body>
-  
     <main class="root">
       <my-header></my-header>
 
       <div class="container">
-
         <section class="hero-section">
           <div class="hero-texts">
             <p class="welcome-text">Welcome to The Video Game Vault</p>
-            <h2 class="hero-title">Find and watch <br/>our popular videos here</h2>
-            <a href="http://" class="btn-secondary" target="_blank" rel="noopener noreferrer">Watch now</a>
+            <h2 class="section-title">
+              Find and watch <br />our popular videos here
+            </h2>
+            <a href="https://www.youtube.com/@TheVideoGameVault/videos" class="btn-secondary" target="_blank"
+              rel="noopener noreferrer">Watch now</a>
           </div>
         </section>
 
-        
-
+        <section class="livestream-section">
+          <h2 class="section-title">Most popular videos</h2>
+          <div class="flex-wrapper">
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/DUbOFGDbrJw" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                Arizona Sunshine VR - Part 2 - { HTC Vive - PC - No Commentary }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/0vP-FqR9qtw" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                Arizona Sunshine VR - Part 1 - { HTC Vive - PC - No Commentary }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/0Q0LxzrTY9w" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                V Rising - Part 15 - Ending - { PC - 1440@60fps - No Commentary
+                }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/_9ADdHD_v_4" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                V Rising - Part 14 - Ending - { PC - 1440@60fps - No Commentary
+                }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/uSsi155SluY" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                V Rising - Part 13 - Ending - { PC - 1440@60fps - No Commentary
+                }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/JgNzO_7CWro" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                Call of Duty: Modern Warfare - Part 9 Hometown - { PC -
+                1440@60fps - No Commentary }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/D9KiKnYBqSA" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                V Rising - Part 9 - Ending - { PC - 1440@60fps - No Commentary }
+              </p>
+            </div>
+            <div class="flex-item">
+              <div class="flex-img">
+                <iframe src="https://www.youtube.com/embed/5AvXom3CDpU" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-title">
+                V Rising - Part 7 - Ending - { PC - 1440@60fps - No Commentary }
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <footer-component></footer-component>
     </main>
-  
   </body>
 
   <script src="./src/script/header.js" type="text/javascript" defer></script>
   <script src="./src/script/footer.js" type="text/javascript" defer></script>
-  </html>
-  
-  <!-- SCROLL TOP -->
-  <!-- <a href="" class="scroll_top show-scroll" id="scroll-top">
+
+</html>
+
+<!-- SCROLL TOP -->
+<!-- <a href="" class="scroll_top show-scroll" id="scroll-top">
     <i class="icofont-caret-up scrolltop_icon"></i>
   </a> -->
