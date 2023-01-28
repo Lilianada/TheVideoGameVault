@@ -231,6 +231,7 @@ header {
 .nav-toggle {
   width: 1.75rem;
   height: auto;
+  cursor: pointer;
 }
 
 .bar {
@@ -241,7 +242,6 @@ header {
   border-radius: 3px;
   position: relative;
   z-index: 3;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -278,7 +278,7 @@ header {
   position: fixed;
   top: 0;
   left: -150%;
-  transition: all .8s ease-in;
+  transition: all .5s ease-in-out;
   padding: 2rem;
 }
 
@@ -319,6 +319,9 @@ header {
     background-clip: text;
 }
 
+.fa-youtube{
+    margin-right: .5rem;
+}
 
 @media screen and (min-width: 768px) {
   .mobile-header {

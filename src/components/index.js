@@ -1,5 +1,3 @@
-
-
 // SHOW SCROLL TOP
 function scrollTop() {
   const scrollTop = document.getElementById("scroll-top");
@@ -54,7 +52,7 @@ class myHeader extends HTMLElement {
             <div class="bar bar-three"></div>
           </div>
   
-          <nav class="nav-bar">
+          <nav class="nav-bar" id="navbar">
             <ul class="nav-list">
               <li class="nav-item">
                 <h6 class="nav-title">Menu</h6>
@@ -101,11 +99,13 @@ class myHeader extends HTMLElement {
 }
 customElements.define("my-header", myHeader);
 
-
 const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector("nav");
+const nav = document.querySelector("#navbar");
 toggle.addEventListener("click", () => {
-    nav.classList.toggle("nav-open");
-    // toggle.classList.toggle("change");
-    console.log("clicked")
+  toggle.classList.toggle("change");
+  nav.classList.toggle("nav-open");
 });
+if ( toggle.classList.contains("change")) {
+    nav.classList.add("nav-open");
+    console.log("open");
+}
