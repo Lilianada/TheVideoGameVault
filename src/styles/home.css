@@ -1,5 +1,41 @@
+/* @import "./index.css"; */
+
 .container{
     width: 90%;
-    margin: 0 auto;
-    
+    background: rgba(0 50 83 / 32%);
+    height: 90%;
+    min-height: 90vh;
+    margin: 2rem auto;
+    border-radius: 1rem
 }
+
+.hero-section{
+    padding: 1rem;
+}
+
+.hero-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    background: url(../../src/assets/image.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.hero-text{
+    line-height: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin: 3rem auto;
+    }
+}
+    
