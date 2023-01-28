@@ -12,9 +12,10 @@ class myHeader extends HTMLElement {
         <header>
         <!-- Desktop Menu -->
         <div class="desktop-header">
-          <a class="nav-link" href="/">
+          <a class="nav-logo" href="/">
             <img src="./src/assets/The-Video-Game-Vault_profile_image.jpg" alt="FunConnect Logo" />
-          </a>
+            <h4 class="logo-name">TheVideoGameVault</h4>
+            </a>
           <nav class="nav-bar">
             <ul class="nav-list">
               <li class="nav-item">
@@ -32,12 +33,14 @@ class myHeader extends HTMLElement {
                   Contact Me
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/" class="btn-secondary">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                  Youtube
+                </a>
+              </li>
             </ul>
           </nav>
-          <a href="/" class="youtube-button">
-            <i class="fa fa-youtube" aria-hidden="true"></i>
-            <p class="button-text">Youtube</p>
-          </a>
         </div>
   
         <!-- Mobile Menu -->
@@ -101,11 +104,23 @@ customElements.define("my-header", myHeader);
 
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector("#navbar");
+const link = document.querySelectorAll(".nav-link");
+
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("change");
   nav.classList.toggle("nav-open");
 });
+
 if ( toggle.classList.contains("change")) {
     nav.classList.add("nav-open");
     console.log("open");
 }
+
+link.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggle.classList.remove("change");
+    nav.classList.remove("nav-open");
+    link.classList.add("active-link");
+  });
+});
+
