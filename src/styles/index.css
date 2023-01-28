@@ -242,6 +242,7 @@ header {
   position: relative;
   z-index: 3;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .change .bar-one {
@@ -267,7 +268,7 @@ header {
   background-clip: border-box;
 }
 
-.navbar {
+.nav-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,11 +278,11 @@ header {
   position: fixed;
   top: 0;
   left: -150%;
-  transition: all .5s ease-in;
+  transition: all .8s ease-in;
   padding: 2rem;
 }
 
-.active {
+.nav-open {
   left: 0;
 }
 
@@ -324,162 +325,3 @@ header {
     display: none;
   }
 }
-
-/* 
-header .mobile-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-}
-
-.mobile-header .nav-logo img{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-}
-
-@media screen and (min-width: 768px) {
-  header .mobile-header {
-    display: none;
-  }
-} */
-/* nav-toggle */
-/* 
-
-{
-  display: none;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  background: #202020;
-  text-align: left;
-  padding: 1.5rem 1rem 1rem;
-  transition: all 300ms ease-in-out;
-}
-
-
-.nav-list {
-  margin-top: 2.5rem;
-}
-
-.nav-list:last-child {
-  margin-top: 3rem;
-}
-
-.nav-list .nav-item {
-  padding-bottom: 1.5rem;
-}
-
-.nav-list .nav-item .navTitle {
-  color: #e8f8f8;
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 500;
-  text-transform: none;
-}
-
-.nav-list .nav-item .nav-link {
-  color: #d9d9d9;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.nav-list .nav-item .nav-link:hover {
-  color: #ff9100;
-}
-
-.youtube-button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.youtube-button ,
-
-.youtube-button {
-  height: 64px;
-  width: 168px;
-  padding: 8px 20px;
-  background: #000000;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.youtube-button  .appleLogo,
-
-.youtube-button .appleLogo {
-  margin-right: 16px;
-}
-
-.youtube-button  .button-text,
-
-.youtube-button .button-text {
-  font-family: "Tajawal", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 13px;
-}
-
-.youtube-button  .appText,
-
-.youtube-button .appText {
-  font-family: "Tajawal", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 13px;
-}
-
-.youtube-button  {
-  margin-right: 1rem;
-}
-header .mobile-header .show-navbar {
-  display: flex;
-}
-header .desktopHeader {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  header .desktopHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    margin: 1.5rem auto;
-  }
-  header .desktopHeader .navbar .nav-list {
-    display: flex;
-  }
-  header .desktopHeader .navbar .nav-list .nav-link {
-    color: #d9d9d9;
-    font-weight: 500;
-    text-transform: none;
-    padding: 0 1rem;
-    transition: all 300ms ease-in-out;
-  }
-  header .desktopHeader .navbar .nav-list .nav-link:hover {
-    color: #ff9100;
-  }
-  header .desktopHeader .youtube-button {
-    width: 197px;
-    height: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    background: #ff9100;
-    color: #000000;
-    text-transform: capitalize;
-    border-radius: 8px;
-  }} */
