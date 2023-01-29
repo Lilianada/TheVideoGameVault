@@ -97,7 +97,7 @@ class myHeader extends HTMLElement {
             target="_blank"
             rel="noopener noreferrer">
               <i class="fa fa-youtube" aria-hidden="true"></i>
-              <p class="button-text">Youtube</p>
+              Youtube
             </a>
           </nav>
         </div>
