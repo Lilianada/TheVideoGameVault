@@ -163,6 +163,7 @@ button:hover {
   height: 50px;
   width: 168px;
   padding: 12px 18px;
+  border: none;
   background: var(--gradient);
   color: var(--brand);
   font-size: var(--eighteen);
@@ -228,7 +229,8 @@ header {
 }
 
 .nav-logo .logo-name {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
+  font-weight: 700;
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -355,7 +357,8 @@ header {
   }
 
   .nav-logo .logo-name {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
+    font-weight: 700;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
