@@ -76,6 +76,10 @@
         padding: 2rem;
         margin: 3rem;
     }
+
+    .section-header{
+        flex-direction: row;
+    }
 }
 
 /*----- Hero section------ */
