@@ -29,6 +29,10 @@
     display: inline;
 }
 
+.section-title .gradient-text{
+    font-weight: 700;
+}
+
 .section-link{
     display: flex;
     align-items: center;
@@ -40,7 +44,6 @@
 .fa-arrow-circle-o-right{
     margin-left: .5rem;
 }
-
 
 .flex-wrapper{
     display: flex;
@@ -70,13 +73,14 @@
     }
 
     .index-sections{
-        padding: 3rem 2rem;
+        padding: 2rem;
+        margin: 3rem;
     }
 }
 
 /*----- Hero section------ */
 .hero-section{
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 }
 
 .hero-texts{
@@ -107,6 +111,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero-section{
+        padding: 3rem;
+    }
     .hero-texts{
         padding: 3rem 2rem;
     }
@@ -197,6 +204,7 @@
     width: 300px;
     height: 49px;
     border: none;
+    outline: none;
     border-radius: 10px;
     padding: 0 1rem;
     font-size: var(--eighteen);
