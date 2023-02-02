@@ -24,13 +24,13 @@ class myHeader extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/about">
-                  About Me
+                <a class="nav-link" href="../pages/videos">
+                  Videos
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contact">
-                  Contact Me
+                  Contact
                 </a>
               </li>
               <li class="nav-item">
@@ -74,13 +74,13 @@ class myHeader extends HTMLElement {
               </li>
   
               <li class="nav-item">
-                <a class="nav-link" href="../pages/about">
-                  About Me
+                <a class="nav-link" href="../pages/videos">
+                  Videos
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/contact">
-                  Contact Me
+                  Contact
                 </a>
               </li>
             </ul>

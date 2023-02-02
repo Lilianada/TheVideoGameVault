@@ -51,10 +51,12 @@
 
 body {
   background-color: #0f172a;
-  color: var(--white);
+  height: 100%;
+  width: 100%;
   max-width: 2560px;
   margin: 0 auto;
-  height: 100%;
+  color: var(--white);
+  overflow-x: hidden;
 }
 
 a {
