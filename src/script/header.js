@@ -19,7 +19,7 @@ class myHeader extends HTMLElement {
           <nav class="nav-bar">
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="../pages/blog.html">
+                <a class="nav-link" href="../../pages/blog/">
                   Blog
                 </a>
               </li>
@@ -29,7 +29,7 @@ class myHeader extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/contact.html">
+                <a class="nav-link" href="../../pages/contact/">
                   Contact
                 </a>
               </li>
@@ -74,7 +74,7 @@ class myHeader extends HTMLElement {
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="../pages/blog.html">
+                <a class="nav-link" href="../../pages/blog/">
                   Blog
                 </a>
               </li>
@@ -85,7 +85,7 @@ class myHeader extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/contact.html">
+                <a class="nav-link" href="../../pages/contact/">
                   Contact
                 </a>
               </li>
