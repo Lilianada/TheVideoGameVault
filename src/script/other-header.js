@@ -5,7 +5,7 @@ class otherHeader extends HTMLElement {
           <!-- Desktop Menu -->
           <div class="desktop-header">
             <a class="nav-logo" href="/">
-              <img src="../../src/assets/The-Video-Game-Vault_profile_image.webp" alt="FunConnect Logo" />
+              <img src="../../src/assets/The-Video-Game-Vault_profile_image.webp" alt="FunConnect Logo" loading="lazy" />
               <h4 class="logo-name">TheVideoGameVault</h4>
               </a>
             <nav class="nav-bar">
@@ -36,7 +36,7 @@ class otherHeader extends HTMLElement {
           <!-- Mobile Menu -->
           <div class="mobile-header">
             <a class="nav-logo" href="/">
-              <img src="../../src/assets/The-Video-Game-Vault_profile_image.webp" alt="FunConnect Logo" />
+              <img src="../../src/assets/The-Video-Game-Vault_profile_image.webp" alt="FunConnect Logo" loading="lazy" />
               <h5 class="logo-name">TheVideoGameVault</h5>
             </a>
             <div class="nav-toggle">
