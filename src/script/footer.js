@@ -17,4 +17,4 @@ class Footer extends HTMLElement {
   }
   customElements.define("footer-component", Footer);
 
-  document.addEventListener('touchstart', onTouchStart, {passive: true});
+  // document.addEventListener('touchstart', onTouchStart, {passive: true});
