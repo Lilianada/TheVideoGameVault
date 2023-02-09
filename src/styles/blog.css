@@ -86,6 +86,34 @@
   margin-left: 2rem;
 }
 
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 50px;
+  width: 168px;
+  padding: 12px 18px;
+  border: none;
+  background: var(--gradient);
+  color: var(--brand);
+  font-size: var(--eighteen);
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s;
+}
+
+.load-more:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .article-heading {
     line-height: 42px;

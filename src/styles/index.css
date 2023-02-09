@@ -530,11 +530,6 @@ footer {
   height: 180px;
 }
 
-.index-sections .btn-secondary{
-  align-self: center;
-  margin-top: 2rem;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     margin: 3rem auto;
