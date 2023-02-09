@@ -29,11 +29,6 @@ class myHeader extends HTMLElement {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../pages/contact/">
-                  Contact
-                </a>
-              </li>
-              <li class="nav-item">
                 <a href="https://www.youtube.com/@TheVideoGameVault/videos" 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,11 +79,7 @@ class myHeader extends HTMLElement {
                   Videos
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../pages/contact/">
-                  Contact
-                </a>
-              </li>
+              
             </ul>
             <ul class="nav-list">
               <li class="nav-item">

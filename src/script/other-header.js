@@ -21,11 +21,6 @@ class otherHeader extends HTMLElement {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../../pages/contact/">
-                    Contact
-                  </a>
-                </li>
-                <li class="nav-item">
                   <a href="https://www.youtube.com/@TheVideoGameVault/videos" 
                   target="_blank"
                   rel="noopener noreferrer"
@@ -74,11 +69,6 @@ class otherHeader extends HTMLElement {
                 <li class="nav-item">
                   <a class="nav-link" href="../../pages/videos/">
                     Videos
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../../pages/contact/">
-                    Contact
                   </a>
                 </li>
               </ul>
