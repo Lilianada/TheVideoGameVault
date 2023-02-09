@@ -1,0 +1,31 @@
+1. Convert your images to Webp format as it loads faster and isn't heavy
+
+## How to add a new article card
+2. In the blog folder, you'll see an index file. This file is the one that consists of all the blogs. To add a new blog, you'll go to the script folder, open the blog.js file and add a new object to the blogs array. The object should have the following properties:
+   1. title: The title of the blog
+   2. date: The date of the blog
+   3. image: The image of the blog
+   4. excerpt: The description of the blog
+   5. link: The link to the blog
+   The new article will be added to the index file automatically.
+
+3. To add a new article, create a new file and copy what is in the template file and paste it in the new file. Then, change the title, date, image, and the content of the article. The image should be in the assets folder and the link should be the name of the file. Try as much as possible to use the same format as the template file as well as the class names used. If you wish to create a new class name, you can do so in the blog.css file in the styles folder inside the src folder.
+
+4. Subscription is currently not functional, if you want to take it out, you can simply remove the code
+    "<!-- Subscription -->
+            <subscription-component></subscription-component>"
+    from all the files in the pages folder and the index as well.
+
+5. The footer and header components are in the src/script folder. You can edit them there. They are js components so that you can use them in any file you want by simply calling the component name and adding the script tag. For example, to add the footer to a new page, you'll add the following code to the file:
+    "<!-- Footer -->
+            <footer-component></footer-component>"
+    </body>
+    and add the script tag at the bottom of the file after the body closing tag before the html closing tag.
+    <script src="../../src/script/footer.js" type="text/javascript" defer></script>
+
+    You have to place them in the right order as well. The footer should be at the bottom of the body tag and the header should be at the top under the body opening tag.
+    <body>
+        <main class="root">
+            <!-- Header -->
+            <other-header></other-header>
+            
