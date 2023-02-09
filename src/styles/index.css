@@ -81,7 +81,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: var(--sixteen);
   font-weight: 400;
   line-height: 1.5rem;
   color: var(--white);
@@ -163,7 +163,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 168px;
+  width: fit-content;
   padding: 12px 18px;
   border: none;
   background: var(--gradient);
@@ -538,7 +538,7 @@ footer {
 
   .index-sections {
     padding: 1.5rem;
-    margin: 3rem 1.5;
+    margin: 3rem 1.5rem;
   }
 
   .flex-wrapper {
