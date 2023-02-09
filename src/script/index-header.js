@@ -19,18 +19,13 @@ class myHeader extends HTMLElement {
           <nav class="nav-bar">
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="../pages/blog">
+                <a class="nav-link" href="../../pages/blog/">
                   Blog
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/about">
-                  About Me
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contact">
-                  Contact Me
+                <a class="nav-link" href="../../pages/videos/">
+                  Videos
                 </a>
               </li>
               <li class="nav-item">
@@ -68,21 +63,23 @@ class myHeader extends HTMLElement {
             <!-- Navigation List -->
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="../pages/blog">
+                <a class="nav-link" href="../../index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../../pages/blog/">
                   Blog
                 </a>
               </li>
   
               <li class="nav-item">
-                <a class="nav-link" href="../pages/about">
-                  About Me
+                <a class="nav-link" href="../../pages/videos/">
+                  Videos
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../pages/contact">
-                  Contact Me
-                </a>
-              </li>
+              
             </ul>
             <ul class="nav-list">
               <li class="nav-item">

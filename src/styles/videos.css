@@ -1,0 +1,24 @@
+.videos-wrap .flex-item{
+    height: clamp(11.25rem, 50vh, 20rem);
+}
+
+.videos-wrap .flex-item .flex-img{
+    height: 70%;
+}
+
+.flex-img iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-title{
+    height: 30%;
+    font-size: var(--fourteen);
+    text-align: left;
+    padding: 1rem;
+}
+
+.view-link{
+    margin-top: .75rem;
+}

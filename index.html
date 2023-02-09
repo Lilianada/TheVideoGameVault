@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="./public/logo192.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./public/favicon.ico">
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="stylesheet" href="./src/styles/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -20,17 +21,15 @@
 
       <div class="container">
         <section class="hero-section">
-          <img src="./src/assets/The-Video-Game-Vault_Cover_Image.jpg" alt="">
-          <!-- <div class="hero-texts">
-            <p class="welcome-text">Welcome to The Video Game Vault</p>
-            <h2 class="hero-section-title">
-              Find and watch <br />our popular videos here
-            </h2>
-            <a href="https://www.youtube.com/@TheVideoGameVault/videos" class="btn-secondary" target="_blank"
-              rel="noopener noreferrer">Watch now</a>
-          </div> -->
+          <div class="hero-image-desktop">
+            <img src="./src/assets/The-Video-Game-Vault_Cover_Image.jpg" alt="">
+          </div>
+          <div class="hero-image-mobile">
+            <img src="./src/assets/The-Video-Game-Vault_profile_image.jpg" alt="">
+          </div>
         </section>
 
+        <!-- Videos Section -->
         <section class="index-sections">
           <div class="section-header">
             <h2 class="section-title">Most popular
@@ -72,59 +71,6 @@
               <p class="video-title">
                 V Rising - Part 15 - Ending - { PC - 1440@60fps - No Commentary
                 }
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="flex-img">
-                <iframe src="https://www.youtube.com/embed/_9ADdHD_v_4" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <p class="video-title">
-                V Rising - Part 14 - Ending - { PC - 1440@60fps - No Commentary
-                }
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="flex-img">
-                <iframe src="https://www.youtube.com/embed/uSsi155SluY" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <p class="video-title">
-                V Rising - Part 13 - Ending - { PC - 1440@60fps - No Commentary
-                }
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="flex-img">
-                <iframe src="https://www.youtube.com/embed/JgNzO_7CWro" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <p class="video-title">
-                Call of Duty: Modern Warfare - Part 9 Hometown - { PC -
-                1440@60fps - No Commentary }
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="flex-img">
-                <iframe src="https://www.youtube.com/embed/D9KiKnYBqSA" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <p class="video-title">
-                V Rising - Part 9 - Ending - { PC - 1440@60fps - No Commentary }
-              </p>
-            </div>
-            <div class="flex-item">
-              <div class="flex-img">
-                <iframe src="https://www.youtube.com/embed/5AvXom3CDpU" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-              </div>
-              <p class="video-title">
-                V Rising - Part 7 - Ending - { PC - 1440@60fps - No Commentary }
               </p>
             </div>
           </div>
@@ -184,21 +130,6 @@
                 <p class="article-description">
                   We have compiled a list of the best VR games for you to play in 2019.
                 </p>
-                <a href="/" class="gradient-text"  target="_blank" rel="noopener noreferrer">Read more</a>
-              </div>
-            </div>
-
-            <div class="flex-item">
-              <div class="flex-img">
-                <img img src="./src/assets/cod2.jpg" alt="Featured Article thumbnails">
-              </div>
-              <div class="article-texts">
-                <p class="article-title">
-                  The Best VR Games of 2023
-                </p>
-                <p class="article-description">
-                  We have compiled a list of the best VR games for you to play in 2019.
-                </p>
                 <a href="/" class="gradient-text" target="_blank" rel="noopener noreferrer">Read more</a>
               </div>
             </div>
@@ -206,33 +137,15 @@
         </section>
 
         <!-- Subscribe Section -->
-        <section class="subscription-section">
-          <div class="subscription-texts">
-            <h2 class="subscription-title">Subscribe to our
-              <span class="gradient-text"> Newsletter</span>
-            </h2>
-            <p class="subscription-description">
-              Subscribe to our newsletter and get our latest news and updates.
-            </p>
-          </div>
-          <form class="subscription-form" action="">
-            <input type="email" name="email" class="subscription-input" placeholder="Enter your email">
-            <button type="submit" class=" btn-secondary">Subscribe</button>
-          </form>
-        </section>
-
+        <subscription-component></subscription-component>
       </div>
 
       <footer-component></footer-component>
     </main>
   </body>
 
-  <script src="./src/script/header.js" type="text/javascript" defer></script>
+  <script src="./src/script/index-header.js" type="text/javascript" defer></script>
   <script src="./src/script/footer.js" type="text/javascript" defer></script>
+  <script src="./src/script/subscription.js" type="text/javascript" defer></script>
 
 </html>
-
-<!-- SCROLL TOP -->
-<!-- <a href="" class="scroll_top show-scroll" id="scroll-top">
-    <i class="icofont-caret-up scrolltop_icon"></i>
-  </a> -->
