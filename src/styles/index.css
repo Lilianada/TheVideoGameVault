@@ -205,6 +205,7 @@ header {
   font-weight: bold;
   padding: 1rem;
   text-transform: capitalize;
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -347,6 +348,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: -webkit-sticky;
     position: sticky;
     padding: 2rem;
     height: 5.5rem;
@@ -604,6 +606,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   height: 120px;
+  gap: 1rem;
 }
 
 .subscription-input {
@@ -620,6 +623,7 @@ footer {
 @media screen and (min-width: 768px) {
   .subscription-form {
     height: 50px;
+    gap: 0;
   }
 
   .subscription-input {

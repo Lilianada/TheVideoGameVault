@@ -78,6 +78,8 @@
 
 .view-link{
     margin-top: .75rem;
+    font-weight: 500;
+    font-size: var(--eighteen);
 }
 
 @media screen and (min-width: 768px) {
@@ -92,8 +94,10 @@
 .flex-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
     border-radius: 10px 10px 0 0;
     margin-bottom: 1rem;
 }
