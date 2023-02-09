@@ -408,6 +408,12 @@ header {
   .fa-youtube {
     margin-right: 0.5rem;
   }
+
+  .nav-item .btn-secondary{
+    margin-bottom: 0;
+    width: 120px;
+    height: 40px;
+  }
 }
 
 /* Footer */
