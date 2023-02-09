@@ -20,19 +20,6 @@
     border-radius: 1rem;
 }
 
-/* .hero-texts{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 3rem 1rem;
-    align-items: flex-start;
-    background-size:  cover;
-    background-position: center top;
-    background-repeat: no-repeat; */
-    /* background: url(../../src/assets/The-Video-Game-Vault_Cover_Image.jpg) var(--brand) ;
-        height: 15rem; *
-} */
-
 .hero-section-title{
     line-height: 42px;
     font-size: var(--fourtyFive);

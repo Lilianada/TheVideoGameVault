@@ -488,6 +488,13 @@ footer {
   color: var(--white);
 }
 
+.section-link:hover{
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .fa-arrow-circle-o-right {
   margin-left: 0.5rem;
 }
@@ -529,12 +536,12 @@ footer {
 @media screen and (min-width: 768px) {
   .container {
     margin: 3rem auto;
-    width: 90%;
+    width: 95%;
   }
 
   .index-sections {
-    padding: 2rem;
-    margin: 3rem;
+    padding: 1.5rem;
+    margin: 3rem 1.5;
   }
 
   .flex-wrapper {
@@ -561,11 +568,22 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+  .container {
+    margin: 3rem auto;
+    width: 90%;
+  }
+
+  .index-sections {
+    padding: 2rem;
+    margin: 3rem;
+  }
+  
   .flex-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+
 }
 
 /* Subscription section */
