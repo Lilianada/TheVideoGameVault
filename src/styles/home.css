@@ -116,11 +116,11 @@
 }
 
 .article-title{
-    font-size: var(--fourteen);
-    font-weight: 500;
+    font-size: var(--sixteen);
+    font-weight: 600;
     text-transform: capitalize;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .article-description{
