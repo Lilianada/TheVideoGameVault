@@ -1,14 +1,14 @@
 // excerpt shouldn't be less than 40 chnaracters and more than 60 characters and should have ellipisis at the end(3 dots)
-// body shouldn't be more than 500 characters, depends on you though
-// updatedBy should be your name
+// link should be the article index page link
 // updatedAt should be the date of the post
 // readingTime should be the time it takes to read the post
+//image should be the article's featured image
 
 const post = [
   {
     title: "My first post",
     excerpt: "This is my first blog post, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "5 min read",
     image: "../../src/assets/cod.webp",
@@ -17,7 +17,7 @@ const post = [
     title: "Drinking water is good for you",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "5 min read",
     image: "../../src/assets/cod (1).webp",
@@ -26,7 +26,7 @@ const post = [
     title: "FIFA 21: The Best Young Players to Sign",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "2 min read",
     image: "../../src/assets/cod2.webp",
@@ -35,7 +35,7 @@ const post = [
     title: "The Best VR Games of 2020",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "3 min read",
     image: "../../src/assets/image.webp",
@@ -44,7 +44,7 @@ const post = [
     title: "The Best VR Games of 2033",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "3 min read",
     image: "../../src/assets/images.webp",
@@ -53,7 +53,7 @@ const post = [
     title: "Call Of Duty 2022",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "2 min read",
     image: "../../src/assets/cod.webp",
@@ -62,7 +62,7 @@ const post = [
     title: "Save The Best For Last",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "4 min read",
     image: "../../src/assets/cod2.webp",
@@ -70,7 +70,7 @@ const post = [
   {
     title: "My first post",
     excerpt: "This is my first blog post, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "5 min read",
     image: "../../src/assets/cod.webp",
@@ -79,7 +79,7 @@ const post = [
     title: "Drinking water is good for you",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "5 min read",
     image: "../../src/assets/cod (1).webp",
@@ -88,7 +88,7 @@ const post = [
     title: "FIFA 21: The Best Young Players to Sign",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "2 min read",
     image: "../../src/assets/cod2.webp",
@@ -97,7 +97,7 @@ const post = [
     title: "The Best VR Games of 2020",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "3 min read",
     image: "../../src/assets/image.webp",
@@ -106,7 +106,7 @@ const post = [
     title: "The Best VR Games of 2033",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "3 min read",
     image: "../../src/assets/images.webp",
@@ -115,7 +115,7 @@ const post = [
     title: "Call Of Duty 2022",
     excerpt:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima odio dignissimos...",
-    updatedBy: "Ixartz",
+    link: "../../pages/blog/blog-index.html",
     updatedAt: "April 24, 2022",
     readingTime: "2 min read",
     image: "../../src/assets/cod.webp",
@@ -140,8 +140,7 @@ const blogPostsHTML = totalPosts
           <span>${post.readingTime}</span>
       </div>
         <p class="article-description">${post.excerpt}</p>
-        <a href="${post.link}" class="gradient-text" target="_blank"
-          rel="noopener noreferrer">Read more</a>
+        <a href="${post.link}" class="gradient-text">Read more</a>
       </div>
     </div>
     `;
@@ -170,8 +169,7 @@ loadMoreBtn.addEventListener("click", () => {
           <span>${post.readingTime}</span>
       </div>
         <p class="article-description">${post.excerpt}</p>
-        <a href="${post.link}" class="gradient-text" target="_blank"
-          rel="noopener noreferrer">Read more</a>
+        <a href="${post.link}" class="gradient-text">Read more</a>
       </div>
     </div>
       `;
