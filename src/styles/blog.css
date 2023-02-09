@@ -1,4 +1,8 @@
 /* All Blog page */
+.flex-wrapper .flex-item{
+  height: 400px;
+}
+
 .flex-img img {
   width: 100%;
   height: 100%;
@@ -12,6 +16,8 @@
 
 .article-texts {
   padding: 1rem;
+  height: 220px;
+  display: grid;
 }
 
 .article-title {

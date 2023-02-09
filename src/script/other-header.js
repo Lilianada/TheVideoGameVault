@@ -111,9 +111,9 @@ class otherHeader extends HTMLElement {
   
   link.forEach((link) => {
     link.addEventListener("click", () => {
+      link.classList.add("active-link");
       toggle.classList.remove("change");
       nav.classList.remove("nav-open");
-      link.classList.add("active-link");
     });
   });
   
