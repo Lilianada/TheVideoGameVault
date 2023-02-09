@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Videos- The Video Game Vault</title>
+    <link rel="stylesheet" href="../../src/styles/blog.css" />
+    <link rel="stylesheet" href="../../src/styles/index.css" />
 </head>
 <body>
     <main class="root">
-        <h1>Videos</h1>
-    </main>
+        <!-- Header -->
+        <other-header></other-header>
+
+        <!-- Articles -->
+        <div class="index-sections">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Latest
+                    <span class="gradient-text"> Articles</span>
+                </h2>
+            </div>
+        </div>
+       <!-- Subscription -->
+       <subscription-component></subscription-component>
+       <!-- Footer -->
+       <footer-component></footer-component>
+   </main>
 </body>
+
+<script src="../../src/script/other-header.js" type="text/javascript" defer></script>
+<script src="../../src/script/footer.js" type="text/javascript" defer></script>
+<script src="../../src/script/subscription.js" type="text/javascript" defer></script>
 </html>
