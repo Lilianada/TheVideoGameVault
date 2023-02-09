@@ -114,6 +114,13 @@
     margin-bottom: .5rem;
 }
 
+.article-subtitle{
+    margin-bottom: 0.5rem;
+    color: #9CA3AF;
+    font-size: var(--twelve);
+    line-height: 22px;
+}
+
 .article-description{
     font-size: var(--fourteen);
     text-align: left;
