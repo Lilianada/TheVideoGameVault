@@ -2,7 +2,7 @@
 /*----- Hero section------ */
 .hero-section{
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem 0;
 }
 
 .hero-image-mobile{
